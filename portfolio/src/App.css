@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  background-color: #0a0f27f6;
   color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  /* cursor: pointer; */
 }
 
-.App-link {
-  color: #61dafb;
+.mouseMove {
+  height: 25px;
+  width: 25px;
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  pointer-events: none;
+  z-index: 10000;
+  /* transition: 0s ease; */ /*pour que le container est de la lentense par rapport a la sourris*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rec1 {
+  left: 4%;
+  top: 8%;
+  width: 28%;
+  height: 2%;
+  /* background-color: #001952; */
+  background: linear-gradient(0.25turn, #043775, #12769E);
+  position: absolute;
+  z-index: 10;
+}
+
+
+
+.rec2 {
+  top: 8%;
+  left: 68%;
+  width: 28%;
+  height: 2%;
+  /* background-color: #001952; */
+  background: linear-gradient(0.25turn, #12769E, #043775);
+  position: absolute;
+  z-index: 10;
+}
+
+
+.rec3 {
+  top: 10%;
+  left: 4%;
+  width: 1%;
+  height: 33%;
+  /* background-color: #001952; */
+  background: linear-gradient(#043775, #12769E);
+  position: absolute;
+  z-index: 10;
+}
+
+
+.rec4 {
+  top: 10%;
+  left: 95%;
+  width: 1%;
+  height: 33%;
+  /* background-color: #001952; */
+  background: linear-gradient(#043775, #12769E);
+  position: absolute;
+  z-index: 10;
+}
+
+
+.rec5 {
+  left: 4%;
+  top: 90%;
+  width: 28%;
+  height: 2%;
+  /* background-color: #001952; */
+  background: linear-gradient(0.25turn, #043775, #12769E);
+  z-index: 10;
+  position: absolute;
+}
+
+
+.rec6 {
+  top: 58%;
+  left: 4%;
+  width: 1%;
+  height: 33%;
+  /* background-color: #001952; */
+  background: linear-gradient(#12769E, #043775);
+  position: absolute;
+  z-index: 10;
+}
+
+
+.rec7 {
+  left: 68%;
+  top: 90%;
+  width: 28%;
+  height: 2%;
+  /* background-color: #001952; */
+  background: linear-gradient(0.25turn, #12769E, #043775);
+  position: absolute;
+  z-index: 10;
+}
+
+
+
+.rec8 {
+  top: 58%;
+  left: 95%;
+  width: 1%;
+  height: 33%;
+  /* background-color: #001952; */
+  background: linear-gradient(#12769E, #043775);
+  position: absolute;
+  z-index: 10;
+}
+
+.carré1 {
+  left: 31.9%;  
+  top: 7.98%;    
+  width: 2.5%; 
+  height: 2.08%;
+  border-top-right-radius: 2px; 
+  /* background-color: #001952; */
+  background-color: #12769E;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  position: absolute;
+  z-index: 10;
+}
+.carré2 {
+  top: 7.98%;
+  left: 65.52%;
+  width: 2.5%;
+  height: 2.08%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
+  z-index: 10;
+}
+.carré3 {
+  top: 89.95%;
+  left: 31.9%;
+  width: 2.5%;
+  height: 2.1%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+  z-index: 10;
+}
+.carré4 {
+  top: 89.95%;
+  left: 65.55%;
+  width: 2.5%;
+  height: 2.1%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(100% 0%, 100% 0%, 0% 100%, 100% 100%);
+  z-index: 10;
+}
+.carré5 {
+  left: 4%;
+  top: 54%;
+  width: 1.04%;
+  height: 4%;
+  /* background-color: #001952; */    
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+  z-index: 10;
+}
+.carré6 {
+  top: 54%;
+  left: 95%;
+  width: 1%;
+  height: 4%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 10;
+}
+.carré7 {
+  left: 4%;
+  top: 42.9%;
+  width: 1.04%;
+  height: 4%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  z-index: 10;
+}
+
+.carré8 {
+  top: 42.9%;
+  left: 94.95%;
+  width: 1.04%;
+  height: 4%;
+  /* background-color: #001952; */
+  background-color: #12769E;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
+  z-index: 10;
 }
