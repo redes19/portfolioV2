@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./CSS/theme.css";
+import Sommaire from "./Component/sommaire.jsx";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
         <div class="carré3"></div>
         <div class="rec4"></div>
         <div class="carré4"></div>
+        {/* <div className="sommaire">
+          <Sommaire />
+        </div> */}
         <div class="rec5"></div>
         <div class="carré5"></div>
         <div class="rec6"></div>

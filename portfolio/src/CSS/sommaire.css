@@ -1,0 +1,151 @@
+.sommaire{
+    /* border: 1px solid; */
+    width: 20em;
+    padding-top: 3em;
+    margin-right: 8em;  
+    transition: width 2s ease;
+    z-index: 10;
+}
+
+.sommaire h2 {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+h2 {
+    font-size: 38px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.line1{
+    /* background-color: #043775; */
+    width: 15em;
+    height: 9px;
+    position: absolute;
+    background: linear-gradient(0.25turn, #043775, #12769E);
+}
+
+.line2{
+    /* background-color: white; */
+    width: 9px;
+    height: 23em;
+    position: absolute;
+    background: linear-gradient(#043775, #12769E);
+}
+
+.projet{
+    width: 3em;
+    height: 3em;
+    padding: 15px 100px;
+    margin-left: 25px;
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet {
+    /* border: 1px solid red; */
+    /* -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1); */
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); 
+}
+
+
+
+.contact{
+    width: 3em;
+    height: 3em;
+    padding: 15px 100px;
+    margin-left: 25px;
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    /* border: 1px solid blueviolet; */
+    -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); ;
+}
+
+.about{
+    width: 3em;
+    height: 3em;
+    padding: 15px 100px;
+    margin-left: 25px;
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    /* border: 1px solid blueviolet; */
+    -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); ;
+}
+
+.titleProjet {
+    font-size: 26px;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    transition: font-size 1s ;
+}
+
+.titleAbout {
+    font-size: 26px;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    transition: font-size 1s ;
+}
