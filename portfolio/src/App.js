@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./CSS/theme.css";
 import Sommaire from "./Component/sommaire.jsx";
+import Bienvenue from "./Component/bienvenue.jsx";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         {/* <div className="sommaire">
           <Sommaire />
         </div> */}
+        <div>
+          <Bienvenue />
+        </div>
         <div class="rec5"></div>
         <div class="carré5"></div>
         <div class="rec6"></div>
