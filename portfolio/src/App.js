@@ -3,11 +3,12 @@ import "./App.css";
 import "./CSS/theme.css";
 import Sommaire from "./Component/sommaire.jsx";
 import Bienvenue from "./Component/bienvenue.jsx";
+import Mouse from "./Component/Mouse.jsx";
 
 function App() {
   return (
     <div className="App">
-      <div class="mouseMove"></div>
+      <Mouse />
       <section class="ecran">
         <div class="rec1"></div>
         <div class="carré1"></div>
@@ -17,11 +18,15 @@ function App() {
         <div class="carré3"></div>
         <div class="rec4"></div>
         <div class="carré4"></div>
-        {/* <div className="sommaire">
-          <Sommaire />
-        </div> */}
-        <div>
-          <Bienvenue />
+        <div className="cadre">
+          <div className="container-info">
+            <div className="intro">
+              <Bienvenue />
+            </div>
+          </div>
+          <div className="container-sommaire">
+            <Sommaire />
+          </div>
         </div>
         <div class="rec5"></div>
         <div class="carré5"></div>

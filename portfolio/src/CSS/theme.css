@@ -4,11 +4,13 @@ body {
     color: white;
     font-family: 'Nunito Sans', sans-serif;
     /* cursor: pointer; */
+    cursor: none;
+    overflow: hidden;
   }
   
   .mouseMove {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border: 2px solid red;
     position: absolute;
     top: 50%;
@@ -17,7 +19,7 @@ body {
     border-radius: 50px;
     pointer-events: none;
     z-index: 10000;
-    /* transition: 0s ease; */ /*pour que le container est de la lentense par rapport a la sourris*/
+    /* transition: 0s ease; */ /*pour que le container ai de la lentense par rapport a la sourris*/
   }
   
   .rec1 {
