@@ -8,7 +8,7 @@
 }
 
 .cadre {
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
     width: 80vw;
     height: 79vh;
     display: flex;
@@ -16,10 +16,11 @@
 }
 
 .intro {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 18vw;
     height: 18vh;
-    margin: 12vh 0 0 8vh;
+    margin: 8vh 0 4vh 17vh;
+    padding-top: 10px;
 }
 
 .container-sommaire {

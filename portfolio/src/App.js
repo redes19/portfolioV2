@@ -4,6 +4,7 @@ import "./CSS/theme.css";
 import Sommaire from "./Component/sommaire.jsx";
 import Bienvenue from "./Component/bienvenue.jsx";
 import Mouse from "./Component/Mouse.jsx";
+import Projet from "./Component/Projet.jsx";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <div className="container-info">
             <div className="intro">
               <Bienvenue />
+            </div>
+            <div>
+              <Projet />
             </div>
           </div>
           <div className="container-sommaire">

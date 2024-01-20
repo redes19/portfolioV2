@@ -1,0 +1,33 @@
+.projet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dev {
+    width: 32vw;
+    height: 30vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.web, .games {
+    height: 30vh;
+    width: 15vw;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+h4 {font-size: 3vh;text-decoration: underline;}
+
+.projet-list li {
+    margin: 15px 0;
+}
