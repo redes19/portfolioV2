@@ -1,23 +1,25 @@
-import React from 'react'
-import "../CSS/sommaire.css"
+// sommaire.jsx
+import React from 'react';
+import "../CSS/sommaire.css";
+import { Link } from "react-router-dom";
 
-export default function () {
+export default function Sommaire() {
   return (
     <div>
-        <div class="sommaire">
-                <h2>Sommaire</h2>
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="projet">
-                    <h3 class="titleProjet">Projet</h3>
-                </div>
-                <div class="about">
-                    <h3 class="titleAbout">About me</h3>
-                </div>
-                <div class="contact">
-                    <h3 class="titleContact">Contact</h3>
-                </div>
-            </div>
+      <div className="sommaire">
+        <h2>Sommaire</h2>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="projet">
+          <Link to="/Projet">Projet</Link>
+        </div>
+        <div className="about">
+          <Link to="/About">A propos de moi</Link>
+        </div>
+        <div className="contact">
+          <Link to="/Contact">Contact</Link>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

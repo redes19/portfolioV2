@@ -5,6 +5,8 @@ import Sommaire from "./Component/sommaire.jsx";
 import Bienvenue from "./Component/bienvenue.jsx";
 import Mouse from "./Component/Mouse.jsx";
 import Projet from "./Component/Projet.jsx";
+import About from "./Component/About.jsx";
+import Contact from "./Component/Contact.jsx";
 
 function App() {
   return (
@@ -25,7 +27,11 @@ function App() {
               <Bienvenue />
             </div>
             <div>
-              <Projet />
+              <Routes>
+                <Route path="/Projet" element={<Projet />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Contact" element={<Contact />} />
+              </Routes>
             </div>
           </div>
           <div className="container-sommaire">
