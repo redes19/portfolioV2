@@ -7,7 +7,6 @@
 .dev {
     width: 32vw;
     height: 30vh;
-    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -26,7 +25,18 @@
 }
 
 
-h4 {font-size: 3vh;text-decoration: underline;}
+h4 {font-size: 3vh;
+    text-decoration: underline;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
 
 .projet-list li {
     margin: 15px 0;

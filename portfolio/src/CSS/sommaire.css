@@ -1,8 +1,9 @@
 .sommaire{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 20em;
     padding-top: 3em;
-    margin-right: 8em;  
+    margin-left: 5vh;
+    margin-right: 10vh;  
     transition: width 2s ease;
     z-index: 10;
 }
@@ -161,4 +162,12 @@ h2 {
     align-items: center;
     margin: 0;
     transition: font-size 1s ;
+}
+
+a{
+    /* border: 1px solid red; */
+    width: 10em;
+    text-decoration: none;
+    color: white;
+    cursor: none;
 }

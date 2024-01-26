@@ -6,7 +6,7 @@ export default function Projet() {
     <div>
         <div className='dev'>
             <div className='web'>
-                <h4>Développement Web</h4>
+                <h4>Web</h4>
                 <div>
                     <ul className='projet-list'>
                         <li>Symbiot</li>
@@ -16,7 +16,7 @@ export default function Projet() {
                 </div>
             </div>
             <div className='games'>
-                <h4>Vidéos Games</h4>
+                <h4>Games</h4>
                 <div>
                     <ul class="projet-list">
                         <li>RPG 2D</li>
