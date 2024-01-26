@@ -1,30 +1,42 @@
-import React from 'react'
-import '../CSS/projet.css'
+import React, { useState } from 'react';
+import '../CSS/projet.css';
 
 export default function Projet() {
+  const [isWebVisible, setWebVisible] = useState(true);
+
+  const toggleList = () => {
+    setWebVisible(!isWebVisible);
+  };
+
   return (
     <div>
-        <div className='dev'>
-            <div className='web'>
-                <h4>Web</h4>
-                <div>
-                    <ul className='projet-list'>
-                        <li>Symbiot</li>
-                        <li>Pokedex</li>
-                        <li>Site de location Jeux vidéos</li>
-                    </ul>
-                </div>
-            </div>
-            <div className='games'>
-                <h4>Games</h4>
-                <div>
-                    <ul class="projet-list">
-                        <li>RPG 2D</li>
-                        <li>Tower-defence</li>
-                    </ul>
-                </div>
-            </div>
+      <div className='dev'>
+        <button className="toggle-button" onClick={toggleList}>
+          {/* <span className="toggle-label-left">Dev</span> */}
+          {/* {isWebVisible ? ' Games' : ' Web'} */}
+          {/* <span className="toggle-label-right">Game</span> */}
+          <span className='span1'>web</span><span className='span2'>games</span>
+        </button>
+        <div className='web' style={{ display: isWebVisible ? 'block' : 'none' }}>
+          <h4>Web</h4>
+          <div>
+            <ol className='projet-list alternating-colors'>
+              <li><strong>Symbiot</strong></li>
+              <li><strong>Pokedex</strong></li>
+              <li><strong>Clone instant gaming</strong></li>
+            </ol>
+          </div>
         </div>
+        <div className='games' style={{ display: isWebVisible ? 'none' : 'block' }}>
+          <h4>Games</h4>
+          <div>
+            <ol className='projet-list alternating-colors'>
+              <li><strong>RPG 2D</strong></li>
+              <li><strong>Tower-defence</strong></li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

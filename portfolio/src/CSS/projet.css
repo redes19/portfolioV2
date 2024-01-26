@@ -1,5 +1,5 @@
 .projet-list {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
     margin: 0;
 }
@@ -16,28 +16,62 @@
 }
 
 .web, .games {
+    /* border: 1px solid; */
     height: 30vh;
     width: 15vw;
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    padding-right: 7vh;
+}
+
+
+li { 
+    color: #470dd9; 
+    padding-left: 16px;
+    margin-left: 6vh;
+    margin-top: 35px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
     
+    &:before {
+      content: '';
+      display: block;
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      position: absolute;
+      top: -12px;
+      left: -46px;
+    }
+}
+  
+strong { color: #ffffff; }
+
+ol.alternating-colors { 
+    li:nth-child(odd):before { border-color: #043775; }
+    li:nth-child(even):before { border-color: #12769E; }
 }
 
-
-h4 {font-size: 3vh;
-    text-decoration: underline;
-    /* border: 1px solid; */
+button {
+    width: 9vw;
+    height: 5vh;
+    padding: 0 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 17px;
+    background-color: #043775;
+    border: none;
 }
 
-li{
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: center;
-}
-
-.projet-list li {
-    margin: 15px 0;
+button::after{
+    background-color: #12769E;
 }
