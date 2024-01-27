@@ -11,10 +11,8 @@ export default function Projet() {
   return (
     <div>
       <div className='dev'>
-        <button className="toggle-button" onClick={toggleList}>
-          {/* <span className="toggle-label-left">Dev</span> */}
-          {/* {isWebVisible ? ' Games' : ' Web'} */}
-          {/* <span className="toggle-label-right">Game</span> */}
+        <button className={`${isWebVisible ? 'toggle-button-dev' : 'toggle-button-game'}`}
+          onClick={toggleList}>
           <span className='span1'>web</span><span className='span2'>games</span>
         </button>
         <div className='web' style={{ display: isWebVisible ? 'block' : 'none' }}>

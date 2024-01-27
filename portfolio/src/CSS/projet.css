@@ -59,7 +59,7 @@ ol.alternating-colors {
     li:nth-child(even):before { border-color: #12769E; }
 }
 
-button {
+.toggle-button {
     width: 9vw;
     height: 5vh;
     padding: 0 10px;
@@ -68,10 +68,50 @@ button {
     align-items: center;
     font-size: 18px;
     border-radius: 17px;
-    background-color: #043775;
+    /* background-color: #043775; */
+    background: linear-gradient(to right, #043775 0%, #043775 50%, #12769E 50%, #12769E 100%);
     border: none;
+    cursor: none;
 }
 
-button::after{
-    background-color: #12769E;
+.toggle-button-dev{
+    width: 9vw;
+    height: 5vh;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 17px;
+    /* background-color: #043775; */
+    background: linear-gradient(to right, #043775 0%, #043775 70%, #12769E 70%, #12769E 100%);
+    border: none;
+    cursor: none;
+    transition: all 2s ease-in;
+
+    .span1 {
+        font-size: 26px;
+        font-weight: 0;
+    }
+}
+
+.toggle-button-game{
+    width: 9vw;
+    height: 5vh;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 17px;
+    /* background-color: #043775; */
+    background: linear-gradient(to right, #043775 0%, #043775 30%, #12769E 70%, #12769E 0%);
+    border: none;
+    cursor: none;
+    transition: all 2s ease-in;
+
+    .span2 {
+        font-size: 26px;
+        font-weight: 0;
+    }
 }
