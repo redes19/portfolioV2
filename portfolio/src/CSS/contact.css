@@ -1,0 +1,23 @@
+.contact-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13vh;
+    margin-top: 15vh;
+}
+
+.contact-logo ul {
+    width: 20vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 3vw;
+    height: 6vh;
+}
+

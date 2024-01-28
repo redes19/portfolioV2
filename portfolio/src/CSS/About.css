@@ -1,0 +1,9 @@
+.about-text {
+    /* border: 1px solid; */
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}

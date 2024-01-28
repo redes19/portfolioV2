@@ -19,9 +19,9 @@ export default function Projet() {
           {/* <h4>Web</h4> */}
           <div>
             <ol className='projet-list alternating-colors'>
-              <li><strong>Symbiot</strong></li>
-              <li><strong>Pokedex</strong></li>
-              <li><strong>Clone instant gaming</strong></li>
+              <li className='list-dev'><strong>Symbiot</strong></li>
+              <li className='list-dev'><strong>Pokedex</strong></li>
+              <li className='list-dev'><strong>Clone instant gaming</strong></li>
             </ol>
           </div>
         </div>
@@ -29,8 +29,8 @@ export default function Projet() {
           {/* <h4>Games</h4> */}
           <div>
             <ol className='projet-list alternating-colors'>
-              <li><strong>RPG 2D</strong></li>
-              <li><strong>Tower-defence</strong></li>
+              <li className='list-dev'><strong>RPG 2D</strong></li>
+              <li className='list-dev'><strong>Tower-defence</strong></li>
             </ol>
           </div>
         </div>
