@@ -16,7 +16,7 @@ export default function Projet() {
           <span className='span1'>web</span><span className='span2'>games</span>
         </button>
         <div className='web' style={{ display: isWebVisible ? 'block' : 'none' }}>
-          <h4>Web</h4>
+          {/* <h4>Web</h4> */}
           <div>
             <ol className='projet-list alternating-colors'>
               <li><strong>Symbiot</strong></li>
@@ -26,7 +26,7 @@ export default function Projet() {
           </div>
         </div>
         <div className='games' style={{ display: isWebVisible ? 'none' : 'block' }}>
-          <h4>Games</h4>
+          {/* <h4>Games</h4> */}
           <div>
             <ol className='projet-list alternating-colors'>
               <li><strong>RPG 2D</strong></li>
