@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import '../CSS/projet.css';
+import { Link } from 'react-router-dom';
 
 export default function Projet() {
   const [isWebVisible, setWebVisible] = useState(true);
 
   const toggleList = () => {
-    setWebVisible(!isWebVisible);
+    setWebVisible(!isWebVisible);  
   };
 
   return (
@@ -29,7 +30,7 @@ export default function Projet() {
           {/* <h4>Games</h4> */}
           <div>
             <ol className='projet-list alternating-colors'>
-              <li className='list-dev'><strong>RPG 2D</strong></li>
+              <li className='list-dev'><Link to="/RPG">RPG 2D</Link></li>
               <li className='list-dev'><strong>Tower-defence</strong></li>
             </ol>
           </div>
