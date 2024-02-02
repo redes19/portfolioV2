@@ -3,19 +3,17 @@ import "../App.css";
 import "../CSS/theme.css";
 import Sommaire from "./sommaire.jsx";
 import Bienvenue from "./bienvenue.jsx";
-import Mouse from "./Mouse.jsx";
+
 import Projet from "./Projet.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
-import Style from "./style.jsx";
+
 import RPG from "./projet/RPG.jsx";
 
 export default function Home() {
   return (
     <div>
-        <Mouse />
       <section class="ecran">
-        <Style />
         <div className="cadre">
           <div className="container-info">
             <div className="intro">
