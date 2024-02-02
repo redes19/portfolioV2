@@ -1,3 +1,7 @@
+* {
+    cursor: none;
+}
+
 .about-text {
     /* border: 1px solid; */
     width: 45vw;
@@ -6,4 +10,8 @@
     flex-direction: column;
     justify-content: space-between;
     line-height: 1.5;
+}
+
+a {
+    cursor: none;
 }
