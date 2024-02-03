@@ -8,7 +8,6 @@ import Projet from "./Projet.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 
-import RPG from "./projet/RPG.jsx";
 
 export default function Home() {
   return (
@@ -21,9 +20,9 @@ export default function Home() {
             </div>
             <div>
               <Routes>
-                <Route path="/" element={<Navigate to="/About" />} />
-                <Route path="/Projet" element={<Projet />} />
-                <Route path="/About" element={<About />} />
+              <Route path="/*" element={<Navigate to="/Home/About" />} />
+                <Route path="/Home/Projet" element={<Projet />} />
+                <Route path="/Home/About" element={<About />} />
                 <Route path="/Contact" element={<Contact />} />
               </Routes>
             </div>
