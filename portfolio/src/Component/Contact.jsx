@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/contact.css';
-import Insta from '../logo/instagram.png';
+// import Insta from '../logo/instagram.png';
 import Github from '../logo/github.png';
 import Linkedin from '../logo/linkedin.png';
 import Mail from '../logo/mail.png';
