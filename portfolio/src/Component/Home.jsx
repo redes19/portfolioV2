@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, useNavigate  } from "react-router-dom";
 import "../App.css";
 import "../CSS/theme.css";
 import Sommaire from "./sommaire.jsx";
@@ -20,9 +20,9 @@ export default function Home() {
             </div>
             <div>
               <Routes>
-              <Route path="/*" element={<Navigate to="/Home/About" />} />
-                <Route path="/Home/Projet" element={<Projet />} />
-                <Route path="/Home/About" element={<About />} />
+              <Route path="/*" element={<Navigate to="/About" />} />
+                <Route path="/Projet" element={<Projet />} />
+                <Route path="/About" element={<About />} />
                 <Route path="/Contact" element={<Contact />} />
               </Routes>
             </div>
@@ -32,6 +32,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </div>  
   )
 }

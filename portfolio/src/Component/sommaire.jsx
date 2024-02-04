@@ -11,10 +11,10 @@ export default function Sommaire() {
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="projet">
-          <Link to="/Home/Projet">Projet</Link>
+          <Link to="/Projet">Projet</Link>
         </div>
         <div className="about">
-          <Link to="/Home/About">A propos de moi</Link>
+          <Link to="About">A propos de moi</Link>
         </div>
         <div className="contact">
           <Link to="/Contact">Contact</Link>
