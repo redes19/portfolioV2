@@ -21,7 +21,8 @@ export default function Projet() {
           <div>
             <ol className='projet-list alternating-colors'>
               <li className='list-dev'><strong>Symbiot</strong></li>
-              <li className='list-dev'><strong>Pokedex</strong></li>
+              {/* <li className='list-dev'><strong>Pokedex</strong></li> */}
+              <li className='list-dev'><Link to="/Pokedex">Pokedex</Link> </li>
               <li className='list-dev'><strong>Clone instant gaming</strong></li>
             </ol>
           </div>
